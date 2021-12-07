@@ -16,7 +16,7 @@ const images = [
 		  ];
 		
 		  const galleryEl = document.querySelector('.gallery');
-		  galleryEl.setAttribute('style', 'display: flex; marlist-style-type: none;'  );
+		  galleryEl.setAttribute('style', 'display: flex; list-style-type: none;');
 		  console.log(galleryEl);
 		  images.forEach(el => {
 		  galleryEl.insertAdjacentHTML('afterbegin', `<li><img src = '${el.url}' alt = '${el.alt}' width = "200" height = "100" /></li>`);
