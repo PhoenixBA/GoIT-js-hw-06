@@ -5,7 +5,7 @@
  */
 
 
-const inputEl = document.querySelector('#name-input');
+/*const inputEl = document.querySelector('#name-input');
 console.log(inputEl);
 const outputEl = document.querySelector('#name-output');
 console.log(outputEl);
@@ -17,4 +17,13 @@ inputEl.addEventListener('input', (event) => {
         outputEl.textContent = "Anonymous"
     }
 
-});
+});*/
+
+const inputEl = document.querySelector('#name-input');
+const outputEl = document.querySelector('#name-output');
+
+const onElement = event => {
+  outputEl.textContent = event.currentTarget.value.trim() || 'Anonymous';
+};
+inputEl.addEventListener('input', onElement);
+ 
